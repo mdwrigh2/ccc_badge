@@ -2,6 +2,8 @@
 - Each major is a different class (or groups of majors, i.e. Aero+mech = Pirate, etc. )
 - Team based gameplay (each CCC team is a team on the badge)
 
+----- Michael 8/08/10 -----
+
 Class suggestions:
 EE - wheezard
 CSC - rogue
@@ -13,3 +15,13 @@ PSE - Superaccountant
 Nuke - pyro (from tf2)
 biomed - doctor (from tf2)
 engineering undeclared - engineer (from tf2)
+
+----- Alex 8/09/10 -----
+
+These are a lot of classes to implement, each requiring artwork, and figuring out how to balance everything, etc. I was thinking we could group the majors (EE/CSC/CpE (Wizards), Chem/Textiles/MSE(Clerics), Mech/Aero/Nuke (Berserkers), Biomed/PSE/Undeclared (Fighters)) or something along those lines. The problem I see with this is we then have to figure out how the actual fights will be played out. Typically, Clerics and healers do poorly when going solo, and I'd like the game to be generally viable for solo players still. There will be a lot of people who won't be able to convince their friends to help them out with the game. Perhaps teams, (beyond points, etc.) is a bad idea?
+
+--Update--
+
+I think I'm opposed to team battles per se (as if one group is larger than everyone else, they will just dominate), but I like the idea of equipment unlocks (either based on level, defeating specially placed enemies, solving challenges which result in equipment codes, etc.), that unlock the item (and its enchancement) for the entire team. That way there is a team element, without giving the overwhelming advantage. I'd be open to other team ideas as well, but I think anything involving multi person battles greatley raises the complexity of the program, and makes it difficult for people to get involved with the game.
+
+----- Michael 8/10/10 -----
