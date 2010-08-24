@@ -25,3 +25,14 @@ These are a lot of classes to implement, each requiring artwork, and figuring ou
 I think I'm opposed to team battles per se (as if one group is larger than everyone else, they will just dominate), but I like the idea of equipment unlocks (either based on level, defeating specially placed enemies, solving challenges which result in equipment codes, etc.), that unlock the item (and its enchancement) for the entire team. That way there is a team element, without giving the overwhelming advantage. I'd be open to other team ideas as well, but I think anything involving multi person battles greatley raises the complexity of the program, and makes it difficult for people to get involved with the game.
 
 ----- Michael 8/10/10 -----
+
+Caveat - no easy way to do this kind of ad-hoc mesh with the XBee 2.5 modules.  Ironically enough we *could* with the 1.0 modules, but that doesnt help us.  Because of existing relationship network status, I nomiate mdwright as the Coordinator.  His badge will hand out node id's as it sees the other badges, and then play can resume normally from there.
+The networking will be pretty transparent and secure.
+We'll have a pre-shared:
+* Channel (which anyone can see us by scanning the available channels)
+* PAN ID (which anyone can pull out of the air by listening on our channel)
+* AES key :-) secure encryption
+* Named IDs (not necessarily any kind of security, but very useful)
+So come up with some funny names for your network id's. Something to do with your character.
+
+----- Alex 23/Aug/2010 -----
