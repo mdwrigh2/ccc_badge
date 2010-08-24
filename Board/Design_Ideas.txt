@@ -1,0 +1,24 @@
+Alex here, just getting out some ideas for the design:
+
+LED's on TX/RX.  They're pretty and flashy and fun.
+LED's on XBee: ON and ASSOC.  Useful for debugging.
+
+Slider input requires two Analog pins. No getting around this.
+
+The buttons can be haxxored using resistors values ~1K,2K,4K,8K
+    these will encode the button state into what is pretty much a hex digit.
+
+    To adjust for this we need:
+    * Calibration mode, to adjust for variation in the resistor values
+
+    Also, realize that analog reads take some time, and having a button
+    pressed for only part of the duration will result in a bad combo.
+
+    To deal with this we need to do two consecutive reads, and if they don't
+    match then throw it out as bad input and try again.
+
+    The circuit is pretty much a resistor ladder, and pressing the button
+    will short out the corresponding resistor.
+
+Buzzer on a spare digital pin.
+Any remaining pins go to LED's.
