@@ -1,0 +1,13 @@
+Steps to follow to program badge:
+
+Remove power source (9V battery)
+
+Remove MCU (arduino pro mini)
+
+Plug MCU into Serial USB adapter.
+
+Program MCU over USB via Arduino IDE (or avrdude if you're daring).
+
+Notes:
+This can (in theory) be done with the arduino in the badge, BUT!!!
+Make sure you disconnect or depower the XBee.  

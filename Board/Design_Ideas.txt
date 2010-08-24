@@ -20,5 +20,32 @@ The buttons can be haxxored using resistors values ~1K,2K,4K,8K
     The circuit is pretty much a resistor ladder, and pressing the button
     will short out the corresponding resistor.
 
-Buzzer on a spare digital pin.
+uzzer on a spare digital pin.
 Any remaining pins go to LED's.
+
+Reset button on MCU is tied to both GLCD and XBee, so it acts as a universal
+    reset button for the whole badge.
+
+We *could* include the USB-programmers, but lets not for this year.  6-pin
+    serial headers is good enough for now. (DefCon badge had this, but 
+    ninja badge did not)
+
+Holes in 4 corners must be big enough for 'lanyard' clips... for whatever
+    we end up using for lanyards.
+
+ART ART ART ART ART. we should have art on it....
+    except the copper side is on the back. shit.
+
+We (at one point) discussed lasercutting a case-ish-thing for the badge.
+    We'll see on this one. I'm thinking probably not.
+
+Power Source: 9V Battery. Regulated by a 5V Reg (MCU and LCD) and 3V3 Reg
+    (XBee). Probably duct tape battery to back of badge.
+    Off switch is unplugging battery
+
+
+RESISTORS. For all LEDs. Its a must.
+
+Programming Headers:  
+    * MCU - program the arduino on the badge
+    * XBee - program the XBee on the badge
