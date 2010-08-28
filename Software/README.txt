@@ -15,3 +15,5 @@ GLCD_V3_beta.zip - archive containing the Graphical LCD library for Arduino
     it should unpack in a 'glcd' folder there
 
 Programming_Instructions.txt - tells you how to program the various devices
+
+ln -s /dev/ttyUSB0 ~/.winebalahasldkfhjdsagh
