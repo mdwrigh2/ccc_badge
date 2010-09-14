@@ -37,6 +37,8 @@ int wirelessDelay = 2600;
 
 void setup()
 {
+  pinMode(0, OUTPUT); // tx
+  pinMode(1, INPUT); //rx
   Serial.begin(9600);
   GLCD.Init();   // initialise the library, non inverted writes pixels onto a clear screen
   GLCD.SelectFont(System5x7);
@@ -109,9 +111,11 @@ void  loop()
     Serial.flush();
     Serial.write("+++"); // delay is important
     while((i = Serial.read()) <= -1); // wait for input
-    while((i = Serial.read()) > -1) { // get input
-      GLCD.print((char) i); // should print 'OK'
-    }
+    do { // get input
+      GLCD.print(i)
+      ; // should print 'OK'
+    } while((i = Serial.read()) > -1);
+    delay(100);
     /* Display name */
     GLCD.CursorTo(0,6);
     GLCD.print("Name:");
@@ -119,8 +123,9 @@ void  loop()
     Serial.write("ATNI\n"); // give me my name
     while((i = Serial.read()) <= -1); // wait for input
     while((i = Serial.read()) > -1) { // get input
-      GLCD.print((char) i); // should display my name
+      GLCD.print(i); // should display my name
     }
+    delay(100);
     /* Association Indication */
     GLCD.CursorTo(0,7);
     GLCD.print("Assoc:");
@@ -128,7 +133,7 @@ void  loop()
     Serial.write("ATID\n"); // give me my net status
     while((i = Serial.read()) <= -1); // wait for input
     while((i = Serial.read()) > -1) { // get input
-      GLCD.print((char) i); // should display my name
+      GLCD.print(i); // should display my name
     }
    nextWireless = millis() + wirelessDelay;
    delay(300); // so we can read it
