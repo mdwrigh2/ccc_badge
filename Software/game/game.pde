@@ -3,25 +3,64 @@
 #include "fonts/fixednums15X31.h"
 #include "fonts/SystemFont5x7.h"
 
+int ButtonA;
+int ButtonAPin;
+
+int ButtonB;
+int ButtonBPin;
+
+int joystickH;
+int joystickHPin;
+int joystickV;
+int joystickVPin;
+
 void setup(){
     GLCD.Init();
     GLCD.SelectFont(System5x7);
     GLCD.ClearScreen();
-    
-    firstBoot();
+    firstBootSetup();
+    printSplash();
+
 }
 
 void loop(){
+    //set the current state of buttons we may want some to pre-empt others
+    ButtonA = digitalRead(ButtonAPin);
+    ButtonB = digitalRead(ButtonBPin);
+    //we're going to want a way to figure out up-down left-right from this info
+    joystickH = analogRead(joystickHPin);
+    joystickV = analogRead(joystickVPin);
+    
+    if(firstBoot){
+        switch(state){
+          case KEYBOARD:
+             keyboardDialog();
+          case CHARACTER:
+             
+          case MAJOR:
+          default:
+            //EVERYBODY DIES
+        }
+    else{        
+      switch(state){
+        case MENU:
+        case ENEMIES:
+        case STATS:
+        case HELP:
+        case ABOUT:
+        default:
+          //hope we don't get here
+      }
+    }
+       
     //wait for input here
     //possibly the menu dialog waits here for input, I don't know!
+    }
 }
 
-void firstBoot(){
+void firstBootSetup(){
    printSplash();
-   name = keyboardDialog("Enter Name:");
-   major = chooseMajor();
-   character = chooseCharacter();
-   team = keyboardDialog("Enter Team:");
+   
    
 }
 

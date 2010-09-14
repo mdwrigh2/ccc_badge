@@ -1,0 +1,26 @@
+On Boot:
+
+  - Bootsplash
+  - Name Input
+  - Character Select
+  - Stat Selection
+  - Main Menu
+    |
+     -- Find Fight!
+    |   |
+    |    -- Show Selection of Badges in the area with Name, Lvl and distance (if distance is possible)
+    |
+     -- Character
+    |    |
+    |     -- List character stats (Str, Speed, etc., show level, name, maybe creation date) and a picture of the character
+    |   
+     -- Statistics
+    |   |
+    |    -- Play statistics, such time played, W - L - T, # of times fleed, # of times opponent has fleed, etc. There's plenty that can go here. This could possible be merged with Character.
+    |
+     -- About
+        |
+         -- Maybe show the Bootsplash, or another similar screen
+
+
+- Somebody starts a fight with you. This is asynchronous. Give 30 seconds to Accept or Deny. Sound buzzer and blink LEDs upon challenge.
