@@ -4,15 +4,17 @@
 #include "fonts/SystemFont5x7.h"
 
 int ButtonA;
-int ButtonAPin;
+#define ButtonAPin;
 
 int ButtonB;
-int ButtonBPin;
+#define ButtonBPin;
 
 int joystickH;
-int joystickHPin;
+#define joystickHPin;
 int joystickV;
-int joystickVPin;
+#define joystickVPin;
+
+#define buzzerPin 
 
 void setup(){
     GLCD.Init();

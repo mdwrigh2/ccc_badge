@@ -17,3 +17,7 @@ GLCD_V3_beta.zip - archive containing the Graphical LCD library for Arduino
 Programming_Instructions.txt - tells you how to program the various devices
 
 ln -s /dev/ttyUSB0 ~/.winebalahasldkfhjdsagh
+
+ENVIRONMENT SETUP FROM ARDUINO IDE- 
+  Tools->Board->Arduino Duemilanove or Nano w/ ATmega328
+  5v FTDI!

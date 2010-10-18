@@ -28,7 +28,7 @@
 #define potPin        1   // analog input pin connected to a variable resistor   
 #define POTMIN        850
 #define POTMAX        150
-#define speakerPin    A3   // digital pin that can optionally connected to a piezo or speaker for sound
+#define speakerPin    17   // digital pin that can optionally connected to a piezo or speaker for sound
 //#define brightnessPin 3   // optional output that can be used to control backlight
 
 
